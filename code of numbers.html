@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("enter number"));
+        result="";
+        while(n!=0)
+        {
+            rem=n%10
+            switch(rem)
+            {
+                case 0:result+='Z'
+                        break;
+                case 1:result+='O'
+                        break;
+                case 2:result+='T'
+                        break;
+                case 3:result+='T'
+                        break;
+                case 4:result+='F'
+                        break;
+                case 5:result+='F'
+                        break;
+                case 6:result+='S'
+                        break;
+                case 7:result+='S'
+                        break;
+                case 8:result+='E'
+                        break;
+                case 9:result+='N'
+                        break;
+            }
+            n=parseInt(n/10)
+        }
+        document.write(result.split('').reverse().join(''))
+    </script>
+    
+</body>
+</html>
